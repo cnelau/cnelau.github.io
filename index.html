@@ -14,11 +14,13 @@
     }
     function Cipher (){
     var text = prompt("Enter text");
+    var shift = prompt("Enter shift");
+    var text2 = text.replace(/\s/g, '');
     var ciphertext =''
-		for (x in text){
-        String.fromCharCode(ciphertext = ciphertext + text.charCodeAt(x))
-        alert(ciphertext)
-        }
+		for (x in text){ 
+			ciphertext = ciphertext + String.fromCharCode((text2.charCodeAt(x)) - (parseInt(shift))));
+		}
+	    alert(ciphertext)
 	}
 	</script>
    </head>
