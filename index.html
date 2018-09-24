@@ -17,7 +17,7 @@
     var shift = prompt("Enter shift");
     var ciphertext ='';
 	    for (x in text){
-		    String.fromCharCode(ciphertext = ciphertext + (text.charCodeAt(x)- parseInt(shift)))
+		    String.fromCharCode(ciphertext = ciphertext + (text.charCodeAt(x)+ parseInt(shift)))
 		    alert(ciphertext)
 	    }
 	}
