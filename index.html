@@ -1,0 +1,28 @@
+<html>
+   <head>
+   <p>Lauren's sketchy webpage<p/>
+   Enter Name:<input type="text"id="myInput" value=''>
+	<script>
+	function Count(){
+		var x = 0;
+		while (x<10) {
+			alert(x);
+			x=x+1;
+		}
+    }
+    function Cipher (){
+    var text = "hello"
+    var ciphertext =''
+		for (x in text){
+        String.fromCharCode(ciphertext = ciphertext + text.charCodeAt(x))
+        alert(ciphertext)
+        }
+	}
+	</script>
+   </head>
+   <body>
+   
+	<button onclick='Count()'>Click Here!</button>
+    <button onclick='Cipher()'>Click for secret message</button>
+   </body>
+</html>
