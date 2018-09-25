@@ -1,20 +1,32 @@
 <html>
-<head>
-<script>
-function Cipher (){
+   <head>
+	   <title>definitely a real website</title>   
+   <p>probably the ugliest website</p>
+	   
+   Enter Name:<input type="text"id="myInput" value=''>
+	<script>
+	function Count(){
+		var x = 0;
+		while (x<10) {
+			alert(x);
+			x=x+1;
+		}
+    }
+    function Cipher (){
     var text = prompt("Enter text");
     var shift = prompt("Enter shift");
-    var ciphertext =''
-    var cipher = ''
+    var ciphertext ='';
 	    for (var x in text){
-		    ciphertext = (text.charCodeAt(x)+ parseInt(shift));
-		    cipher = cipher + String.fromCharCode(ciphertext))
-		    alert(cipher)
+		    ciphertext = ciphertext + (text.charCodeAt(x)+ parseInt(shift));
+		    var finalText = String.fromCharCode(ciphertext);
+		    alert(finalText)
 	    }
 	}
-</script>
-</head>
-<body>
-<button onclick='Cipher()'>Click for secret message</button>
-</body>
+	</script>
+   </head>
+   <body>
+   
+	<button onclick='Count()'>Click Here!</button>
+    <button onclick='Cipher()'>Click to make a secret message</button>
+   </body>
 </html>
