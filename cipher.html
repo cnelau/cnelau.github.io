@@ -11,24 +11,23 @@
 			alert(x);
 			x=x+1;
 		}
-    }
-    function Cipher (){
-    var text = prompt("Enter text");
-    var shift = prompt("Enter shift");
-    var ciphertext =''
-    var cipher = ''
-	    for (var x in text){
-		    ciphertext = (text.charCodeAt(x)+ parseInt(shift));
-		    cipher = cipher + String.fromCharCode(ciphertext));
-		    alert(cipher)
-	    }
-	    
 	}
+	function Cipher (){
+    	var text = prompt("Enter text");
+    	var shift = prompt("Enter shift");
+    	var ciphertext =''
+    	var cipher = ''
+	for (var x in text){
+		ciphertext = (text.charCodeAt(x)+ parseInt(shift));
+		cipher = cipher + String.fromCharCode(ciphertext))
+		alert(cipher)
+	}
+	}
+	    
 	</script>
    </head>
    <body>
-   
-	<button onclick='Count()'>Click Here!</button>
-    <button onclick='Cipher()'>Click to make a secret message</button>
+	   <button onclick='Count()'>Click Here!</button>
+	   <button onclick='Cipher()'>Click to make a secret message</button>
    </body>
 </html>
