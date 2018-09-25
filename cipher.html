@@ -15,11 +15,12 @@
     function Cipher (){
     var text = prompt("Enter text");
     var shift = prompt("Enter shift");
-    var ciphertext ='';
+    var ciphertext =''
+    var cipher = ''
 	    for (var x in text){
 		    ciphertext = (text.charCodeAt(x)+ parseInt(shift));
-		    alert(String.fromCharCode(ciphertext))
-		    ciphertext +=ciphertext
+		    cipher = cipher + String.fromCharCode(ciphertext))
+		    alert(cipher)
 	    }
 	}
 	</script>
