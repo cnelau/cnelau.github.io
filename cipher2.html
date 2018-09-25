@@ -17,9 +17,10 @@
     var shift = prompt("Enter shift");
     var ciphertext ='';
 	    for (var x in text){
-		    ciphertext = ciphertext + (text.charCodeAt(x)+ parseInt(shift));
-		    var finalText = String.fromCharCode(ciphertext);
-		    alert(finalText)
+		    ciphertext = (text.charCodeAt(x)+ parseInt(shift));
+		    alert(String.fromCharCode(ciphertext))
+		    ciphertext +=ciphertext
+	    
 	    }
 	}
 	</script>
